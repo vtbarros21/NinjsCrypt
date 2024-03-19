@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" href="./assets/favico.ico" type="favicon Logo" />
+    <title>NinJsCrypt</title>
+  </head>
+  <body>
+    <header>
+      <figure class="logo">
+        <img src="./assets/Logo.png" alt="NinJsCrypt logo" />
+      </figure>
+
+      <nav class="navigation">
+        <ul>
+          <li id="decodificador" class="active">
+            <a href="./decodificador.html" onclick="changeMode('decodificador')"
+              >Decodificador</a
+            >
+          </li>
+          <li id="tradutor">
+            <a href="./tradutor.html" onclick="changeMode('tradutor')"
+              >Tradutor</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <h1 id="resultado">
+            Digite um texto que você deseja <strong>Criptografar</strong> ou
+            <strong>Descriptografar</strong>.
+          </h1>
+        </div>
+        <div class="allignInputbutton">
+          <div class="allignButton">
+            <input type="button" value="Descriptografar" class="btn1" />
+            <input type="button" value="Criptografar" class="btn2" />
+          </div>
+          <input
+            type="text"
+            name="Criptografe seu texto aqui ..."
+            id=""
+            placeholder="Criptografe ou Descriptografe seu texto aqui ..."
+            class="InputTxt"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
